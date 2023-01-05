@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sarah Paluszny - Involvement</title>
+    <link rel="icon" type="image/x-icon" href="/images/headphones.ico">
+
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="plugins/owl/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="plugins/owl/assets/owl.carousel.min.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="technology.html">Technology</a></li>
+            <li class="item"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="item"><a href="audio.html">Audio</a></li>
+            <li class="item"><a href="involvement.html">Involvement</a></li>
+        </ul>
+    </nav>
+    <main id="involvement">
+
+        <header>
+
+            <h1>Involvement at Indiana University</h1>
+        </header>
+
+            <div class="slideshow">
+
+                <div class="owl-carousel owl-theme">
+                    <a href="#"><img src="/images/slideshow/IUSF_race.JPEG" alt="IUSF Volunteering"></a>
+                    <a href="#"><img src="images/slideshow/FreshCow_MemorialStadium.JPG"
+                            alt="IUSF Memorial Stadium Tour"></a>
+                    <a href="#"><img src="images/slideshow/studyabroad_abbeyroad.JPG" alt="Study Abroad Abbey Road"></a>
+                    <a href="#"><img src="images/slideshow/IUDM.JPG" alt="IUDM"></a>
+                    <a href="#"><img src="images/slideshow/IUSF_grouprace.JPG" alt="IUSF Litlle 500"></a>
+                    <a href="#"><img src="images/slideshow/studyabroad_amsterdam.JPG" alt="Study Abroad Amsterdam"></a>
+                    <a href="#"><img src="images/slideshow/IUSF_AssemblyHall.JPG" alt="IUSF Group Photo"></a>
+                    <a href="#"><img src="images/slideshow/IUSF_path.JPG" alt="IUSF Path"></a>
+                    <a href="#"><img src="images/slideshow/studyabroad_bigben.JPG" alt="Study Abroad Big Ben"></a>
+                </div>
+            </div>
+
+
+            <div class="involvement-description">
+
+                <h2>IU Student Foundation</h2>
+                <p>Steering Committee: Supervised events, scholarship processes, and IUSF committees</p>
+                <p>General Member: Volunteered at numerous events for the Little 500</p>
+
+                <h2>IU Dance Marathon</h2>
+                <p>General Member: Raised money and awareness for Riley&lsquo;s Hospital for Children</p>
+
+                <h2>UK Today Study Abroad Program</h2>
+                <p>Spent the summer of 2022, exploring different cultures and learning about the rich heritage London has to offer.</p>
+
+                <h2>Audio Engineering Society</h2>
+                <p>Media Director: Planned events and designed promotional material for AES at IU</p>
+            </div>
+
+
+    </main>
+
+
+    <!-- Owl Carousel JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="plugins/owl/owl.carousel.min.js"></script>
+
+    <!-- To set the carousel to be responsive: 
+		 https://owlcarousel2.github.io/OwlCarousel2/demos/responsive.html -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                margin: 10,
+                loop: true,
+                responsiveClass: true,
+                responsiveRefreshRate: 100,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                },
+                nav: true
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* START STYLES HERE */
+
+/************************** Fonts ************************************/
+
+body {
+  background-color: rgb(28, 28, 30);
+  color: white;
+}
+
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+}
+
+h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p{
+  font-family: 'Josefin Slab', serif;
+}
+
+figcaption{
+  font-family: 'Josefin Slab', serif;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+
+/******************************* HOME **********************************/
+
+#home {
+  width: 62%;
+  margin: 0 auto;
+}
+
+#home p {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+.item a {
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: #97DECE;
+  border-bottom: #97DECE solid 1px;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.4em;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.img-home {
+  border-radius: 50%;
+  width: 800px;
+  position: absolute;
+  top: 20px;
+}
+
+.home-description {
+  padding-top: 275px;
+}
+
+
+/******************************* NAVIAGTION *******************************/
+
+nav {
+  background-color: rgb(22, 22, 22);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .item a {
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav .item a:hover {
+  color: #97DECE;
+  border-bottom: #97DECE solid 1px;
+  padding: 5px;
+}
+
+/******************************* About *******************************/
+
+#about {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.about-flex{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  margin: auto 0;
+}
+
+.img-about {
+  height: 600px;
+  /* margin-left: auto; */
+  border-radius: 5%;
+}
+
+.about-description {
+  /* padding-right: 30px; */
+  width: 550px;
+}
+
+#about p {
+  line-height: 1.2em;
+  font-size: 18px;
+  font-family: 'Josefin Slab', serif;
+
+}
+
+#about a{
+  color: white;
+  font-size: 30px;
+}
+
+#about h1,h2{
+  color: #97DECE
+}
+
+#about a:hover{
+  color: #97DECE
+}
+
+
+/******************************* Audio *******************************/
+
+#audio {
+  /* width: 1000px; */
+  margin: 0 auto;
+}
+
+#audio p {
+  line-height: 1.3em;
+  font-size: 18px;
+  font-family: 'Josefin Slab', serif;
+}
+
+#audio header {
+  /* image licenced through adobe stock */
+  background-image: url(/images/faders.jpeg);
+  height: 300px;
+  background-size: cover;
+}
+
+.audio-title {
+  padding-top: 130px;
+}
+
+#audio h1 {
+  /* border: solid 2px white; */
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 50px;
+}
+
+#audio h2 {
+  color: #97DECE;
+  line-height: 1em;
+  font-size: 30px;
+}
+
+#audio h3 {
+  line-height: 1em;
+}
+
+#audio h4 {
+  line-height: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/************* Live Sound *************/
+
+.img-audio {
+  width: 400px;
+  border-radius: 5%;
+  padding: 0;
+}
+
+.livesound {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.sound-description {
+  padding-left: 30px;
+  width: 600px;
+}
+
+/************* Studio ****************/
+.studio-background {
+  background-color: rgb(22, 22, 22);
+}
+
+.studio {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.studio-description {
+  padding-right: 30px;
+  width: 525px;
+}
+
+.img-studio {
+  height: 350px;
+  border-radius: 5%;
+  margin-top: 50px;
+}
+
+/************* Post Production *************/
+
+.img-post {
+  width: 300px;
+  border-radius: 5%;
+  padding: 0;
+}
+
+.post {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.post-description {
+  padding-left: 30px;
+  padding-top: 30px;
+  width: 500px;
+}
+
+
+/**************************** Technology ***********************/
+#technology {
+  margin: 0 auto;
+}
+
+#technology header {
+  /* image licenced through adobe stock */
+  background-image: url(/images/technology_background.jpeg);
+  height: 300px;
+  background-size: cover;
+}
+
+.it-title{
+  padding: 130px;
+}
+
+.img-technology {
+  width: 400px;
+  border-radius: 5%;
+  padding-right: 10px;
+  padding-top: 60px;
+}
+
+.img-technology:hover {
+  opacity: 90%;
+}
+
+#technology h1 {
+  /* border: solid 2px white; */
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 50px;
+}
+
+#technology h2 {
+  color: #97DECE;
+  line-height: 1em;
+  font-size: 30px;
+}
+
+#technology h3 {
+  line-height: 1em;
+}
+
+#technology h4 {
+  line-height: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+}
+
+
+/************************ Animation ***************************/
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+/**************************** Involvement ***********************/
+#involvement {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column; 
+}
+
+
+#involvement h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+#involvement p{
+  line-height: 1.4em;
+}
+
+
+.img-involvement {
+  width: 450px;
+  border-radius: 5%;
+  padding: 0;
+}
+
+.involvement-description{
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 600px;
+}
+
+#involvement h2{
+color: #97DECE;
+}
+
+/********** OWL ***********/
+
+.owl-carousel a:hover img {
+  opacity: 0.85 !important;
+}
+
+.owl-next span,
+.owl-prev span {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.owl-carousel{
+  width: 500px;
+}
+
+
+/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) {
+  .img-home {
+    right: -600px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {
+  .img-home {
+    right: -500px;
+  }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {
+  .img-home {
+    right: -250px;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+  .img-home {
+    right: -20px;
+  }
+
+}
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */
+
