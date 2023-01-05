@@ -1,1 +1,0 @@
-# spaluszny.github.io
