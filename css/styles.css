@@ -444,45 +444,41 @@ color: #97DECE;
 
 /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
 /* Extra small devices (portrait phones, less than 576px) */
-@media (min-width: 550px) {
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
   .img-home {
-    display: none;
+    display: none; /* or whatever mobile styling you want */
   }
-
-  .owl-carousel{
-  width: 100px;
+  .owl-carousel {
+    width: 100%; /* or appropriate mobile width */
+  }
 }
 
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (min-width: 767.98px) {
+/* Small devices (landscape phones, 768px and up) */
+@media (min-width: 768px) {
   .img-home {
     right: -500px;
     display: block;
   }
-  .owl-carousel{
-  width: 200px;
+  .owl-carousel {
+    width: 200px;
+  }
 }
 
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (min-width: 991.98px) {
+/* Medium devices (tablets, 992px and up) */
+@media (min-width: 992px) {
   .img-home {
     right: -250px;
     display: block;
   }
-
 }
 
-/* Large devices (desktops, less than 1200px) */
-@media (min-width: 1199.98px) {
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
   .img-home {
     right: -20px;
     display: block;
   }
-
 }
 
 /* Extra large devices (large desktops)
