@@ -449,6 +449,10 @@ color: #97DECE;
     display: none;
   }
 
+  .owl-carousel{
+  width: 100px;
+}
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -457,6 +461,9 @@ color: #97DECE;
     right: -500px;
     display: block;
   }
+  .owl-carousel{
+  width: 200px;
+}
 
 }
 
