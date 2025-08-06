@@ -428,18 +428,25 @@ color: #97DECE;
 /********** OWL ***********/
 
 .owl-carousel a:hover img {
-  opacity: 0.85 !important;
+ opacity: 0.85 !important;
 }
-
 .owl-next span,
 .owl-prev span {
-  font-size: 200%;
-  font-weight: bold;
+font-size: 200%;
+font-weight: bold;
+}
+.owl-carousel{
+width: 100px;
 }
 
-.owl-carousel{
-  width: 500px;
+/* Add this to fix the mobile issue */
+.img-owl img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
+
 
 
 /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
